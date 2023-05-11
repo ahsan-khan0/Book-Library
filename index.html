@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- INPUT DATA TABLE -->
+    <h1>Library management system</h1>
+    <div class="table-data" id="table-data">
+      <input type="submit" value="Auther" id="author-btn" />
+      <input type="submit" value="Publisher" id="publisher-btn" />
+      <table class="book-table">
+        <thead>
+          <th>Number</th>
+          <th>Book Name</th>
+          <th>Aurther</th>
+          <th>Publisher</th>
+          <th>Date</th>
+          <th>Action</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <input type="submit" value="addItem" id="add-button" onclick="" />
+    </div>
+    <!-- TEXTBOX INPUTS -->
+    <div class="input-data" id="input-data">
+      <h4>Add a newbook</h4>
+      <input type="text" name="book" placeholder="Book" id="txtBook" />
+      <input type="text" name="auther" placeholder="Auther" id="txtAuther" />
+      <input type="text" name="publisher" placeholder="Publisher" id="txtPub" />
+      <input type="date" name="adDate" id="txtDate" />
+      <input type="submit" value="save" id="get-data" />
+      <input type="submit" value="Go Back" id="Gback-btn" />
+      <br />
+    </div>
+    <!-- author data -->
+    <div id="author-data">
+      <table class="author-table" id="author-table">
+        <thead>
+          <th>Aurther</th>
+          <th>No. of Books</th>
+          <th>Action</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <input type="submit" value="Go Back" id="arBack-btn" />
+    </div>
+
+    <!-- publisher data -->
+    <div id="publisher-data">
+      <table class="publisher-table" id="publisher-table">
+        <thead>
+          <th>Publisher</th>
+          <th>No. of Books</th>
+          <th>Action</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <input type="submit" value="Go Back" id="pbBack-btn" />
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
